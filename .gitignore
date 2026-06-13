@@ -1,0 +1,17 @@
+# Data folders
+data/raw/
+data/processed/
+
+# Environments
+.venv/
+__pycache__/
+*.pyc
+
+# Heavy data and local cache
+.cache/
+data/raw/
+
+# OS files
+.DS_Store
+Thumbs.db
+
