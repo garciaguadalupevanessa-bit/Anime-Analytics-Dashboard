@@ -29,6 +29,14 @@
 * **Página 1 (Visión General):** KPIs Directivos (*Total Miembros*, *Total de Series*, *Nota Media Real*) y la división del mercado (Blockbusters vs. Nichos).
 * **Página 2 (Calidad y Nichos):** Gráfico de dispersión (Efecto Comunidad), comparación de notas (Auditoría de Sesgo) y matriz de formatos rentables.
 
+Debido a las restricciones de despliegue en entornos corporativos de Microsoft Power BI para cuentas de desarrollo, el informe interactivo está disponible para su auditoría completa descargando el archivo fuente dentro de la carpeta `power_bi`: `Anime_Analytics_Dashboard.pbix`.
+
+* **Página 1 (Market Overview):** KPIs ejecutivos (*Total Members*: 217M, *Total Animes*: 11K) y desglose de cuota de mercado. Proporciona una perspectiva macro de la industria para comprender la distribución real del mercado y sus formatos dominantes.
+![Market Overview](images/dashboard_page1.png)
+
+* **Página 2 (Quality & Niches):** Gráfico de dispersión (Efecto Comunidad), comparación de calificaciones (Auditoría de Sesgo) y matriz de formatos rentables. En esta sección limpiamos el sesgo de opinión de la audiencia utilizando medidas personalizadas en DAX. Nuestro indicador estrella, el **Adjusted Score**, arroja una métrica de **134.58 sobre 1000**, lo que permite a los ejecutivos interactuar en tiempo real, filtrar por géneros y detectar **"Joyas Ocultas"** (*Hidden Gems*) para el lanzamiento de nuevas películas.
+![Rating and Niches](images/dashboard_page2.png)
+
 ---
 
 ## 🇬🇧 English Version
@@ -47,6 +55,14 @@
 * [cite_start]**Mitigation:** The calculated metric `actual_community_rating` was implemented to isolate total member volume from extreme scoring behaviors[cite: 27].
 * [cite_start]**Financial Impact:** If the organization made decisions based on the original `rating`, capital would be allocated to artificially overvalued products[cite: 15, 72]. [cite_start]This correction safeguards financial margins[cite: 15].
 
-### 4. Dashboard Structure
+### 4. Dashboard Structure & Visual Insights
 * **Page 1 (Market Overview):** Executive KPIs (*Total Members*, *Total Series*, *Actual Average Rating*) and market share breakdown (Blockbusters vs. Niches).
 * **Page 2 (Quality & Niches):** Scatter plot (Community Effect), rating comparison (Bias Audit), and profitable format matrix.
+
+Due to enterprise tenant deployment restrictions, the interactive report is available for full audit by downloading the source file inside the `power_bi` folder: `Anime_Analytics_Dashboard.pbix`.
+
+* **Page 1 (Market Overview):** Executive KPIs (*Total Members*: 217M, *Total Animes*: 11K) and market share breakdown. It provides a macro perspective of the anime industry to understand market distribution and dominant formats.
+![Market Overview](images/dashboard_page1.png)
+
+* **Page 2 (Quality & Niches):** Scatter plot (Community Effect), rating comparison (Bias Audit), and profitable format matrix. This section cleans the global audience bias using custom DAX measures. Our **Adjusted Score** results in **134.58 out of 1000**, proving that the market average is highly diluted and allowing stakeholders to dynamically filter and detect high-quality content niches for new movie releases.
+![Rating and Niches](images/dashboard_page2.png)
